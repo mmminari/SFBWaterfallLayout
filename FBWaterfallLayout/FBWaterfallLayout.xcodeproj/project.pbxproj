@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D818FE91DF948C7002DEBA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D818FE81DF948C7002DEBA0 /* main.m */; };
+		6D818FEC1DF948C7002DEBA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D818FEB1DF948C7002DEBA0 /* AppDelegate.m */; };
+		6D818FEF1DF948C7002DEBA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D818FEE1DF948C7002DEBA0 /* ViewController.m */; };
+		6D818FF21DF948C7002DEBA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D818FF01DF948C7002DEBA0 /* Main.storyboard */; };
+		6D818FF41DF948C7002DEBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D818FF31DF948C7002DEBA0 /* Assets.xcassets */; };
+		6D818FF71DF948C7002DEBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D818FF51DF948C7002DEBA0 /* LaunchScreen.storyboard */; };
+		6D8190021DF948C8002DEBA0 /* FBWaterfallLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8190011DF948C8002DEBA0 /* FBWaterfallLayoutTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D818FFE1DF948C8002DEBA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D818FDC1DF948C7002DEBA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D818FE31DF948C7002DEBA0;
+			remoteInfo = FBWaterfallLayout;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D818FE41DF948C7002DEBA0 /* FBWaterfallLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBWaterfallLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D818FE81DF948C7002DEBA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D818FEA1DF948C7002DEBA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D818FEB1DF948C7002DEBA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D818FED1DF948C7002DEBA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D818FEE1DF948C7002DEBA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D818FF11DF948C7002DEBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D818FF31DF948C7002DEBA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D818FF61DF948C7002DEBA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D818FF81DF948C7002DEBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D818FFD1DF948C8002DEBA0 /* FBWaterfallLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBWaterfallLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D8190011DF948C8002DEBA0 /* FBWaterfallLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWaterfallLayoutTests.m; sourceTree = "<group>"; };
+		6D8190031DF948C8002DEBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D818FE11DF948C7002DEBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D818FFA1DF948C8002DEBA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D818FDB1DF948C7002DEBA0 = {
+			isa = PBXGroup;
+			children = (
+				6D818FE61DF948C7002DEBA0 /* FBWaterfallLayout */,
+				6D8190001DF948C8002DEBA0 /* FBWaterfallLayoutTests */,
+				6D818FE51DF948C7002DEBA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D818FE51DF948C7002DEBA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D818FE41DF948C7002DEBA0 /* FBWaterfallLayout.app */,
+				6D818FFD1DF948C8002DEBA0 /* FBWaterfallLayoutTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D818FE61DF948C7002DEBA0 /* FBWaterfallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				6D818FEA1DF948C7002DEBA0 /* AppDelegate.h */,
+				6D818FEB1DF948C7002DEBA0 /* AppDelegate.m */,
+				6D818FED1DF948C7002DEBA0 /* ViewController.h */,
+				6D818FEE1DF948C7002DEBA0 /* ViewController.m */,
+				6D818FF01DF948C7002DEBA0 /* Main.storyboard */,
+				6D818FF31DF948C7002DEBA0 /* Assets.xcassets */,
+				6D818FF51DF948C7002DEBA0 /* LaunchScreen.storyboard */,
+				6D818FF81DF948C7002DEBA0 /* Info.plist */,
+				6D818FE71DF948C7002DEBA0 /* Supporting Files */,
+			);
+			path = FBWaterfallLayout;
+			sourceTree = "<group>";
+		};
+		6D818FE71DF948C7002DEBA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D818FE81DF948C7002DEBA0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D8190001DF948C8002DEBA0 /* FBWaterfallLayoutTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D8190011DF948C8002DEBA0 /* FBWaterfallLayoutTests.m */,
+				6D8190031DF948C8002DEBA0 /* Info.plist */,
+			);
+			path = FBWaterfallLayoutTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D818FE31DF948C7002DEBA0 /* FBWaterfallLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8190061DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayout" */;
+			buildPhases = (
+				6D818FE01DF948C7002DEBA0 /* Sources */,
+				6D818FE11DF948C7002DEBA0 /* Frameworks */,
+				6D818FE21DF948C7002DEBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBWaterfallLayout;
+			productName = FBWaterfallLayout;
+			productReference = 6D818FE41DF948C7002DEBA0 /* FBWaterfallLayout.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D818FFC1DF948C8002DEBA0 /* FBWaterfallLayoutTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8190091DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayoutTests" */;
+			buildPhases = (
+				6D818FF91DF948C8002DEBA0 /* Sources */,
+				6D818FFA1DF948C8002DEBA0 /* Frameworks */,
+				6D818FFB1DF948C8002DEBA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D818FFF1DF948C8002DEBA0 /* PBXTargetDependency */,
+			);
+			name = FBWaterfallLayoutTests;
+			productName = FBWaterfallLayoutTests;
+			productReference = 6D818FFD1DF948C8002DEBA0 /* FBWaterfallLayoutTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D818FDC1DF948C7002DEBA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "김민아";
+				TargetAttributes = {
+					6D818FE31DF948C7002DEBA0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = A87J69XM38;
+						ProvisioningStyle = Automatic;
+					};
+					6D818FFC1DF948C8002DEBA0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D818FE31DF948C7002DEBA0;
+					};
+				};
+			};
+			buildConfigurationList = 6D818FDF1DF948C7002DEBA0 /* Build configuration list for PBXProject "FBWaterfallLayout" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D818FDB1DF948C7002DEBA0;
+			productRefGroup = 6D818FE51DF948C7002DEBA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D818FE31DF948C7002DEBA0 /* FBWaterfallLayout */,
+				6D818FFC1DF948C8002DEBA0 /* FBWaterfallLayoutTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D818FE21DF948C7002DEBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D818FF71DF948C7002DEBA0 /* LaunchScreen.storyboard in Resources */,
+				6D818FF41DF948C7002DEBA0 /* Assets.xcassets in Resources */,
+				6D818FF21DF948C7002DEBA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D818FFB1DF948C8002DEBA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D818FE01DF948C7002DEBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D818FEF1DF948C7002DEBA0 /* ViewController.m in Sources */,
+				6D818FEC1DF948C7002DEBA0 /* AppDelegate.m in Sources */,
+				6D818FE91DF948C7002DEBA0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D818FF91DF948C8002DEBA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D8190021DF948C8002DEBA0 /* FBWaterfallLayoutTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D818FFF1DF948C8002DEBA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D818FE31DF948C7002DEBA0 /* FBWaterfallLayout */;
+			targetProxy = 6D818FFE1DF948C8002DEBA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D818FF01DF948C7002DEBA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D818FF11DF948C7002DEBA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D818FF51DF948C7002DEBA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D818FF61DF948C7002DEBA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D8190041DF948C8002DEBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D8190051DF948C8002DEBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D8190071DF948C8002DEBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A87J69XM38;
+				INFOPLIST_FILE = FBWaterfallLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FBWaterfallLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D8190081DF948C8002DEBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = A87J69XM38;
+				INFOPLIST_FILE = FBWaterfallLayout/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FBWaterfallLayout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D81900A1DF948C8002DEBA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FBWaterfallLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FBWaterfallLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBWaterfallLayout.app/FBWaterfallLayout";
+			};
+			name = Debug;
+		};
+		6D81900B1DF948C8002DEBA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FBWaterfallLayoutTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FBWaterfallLayoutTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FBWaterfallLayout.app/FBWaterfallLayout";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D818FDF1DF948C7002DEBA0 /* Build configuration list for PBXProject "FBWaterfallLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8190041DF948C8002DEBA0 /* Debug */,
+				6D8190051DF948C8002DEBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D8190061DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D8190071DF948C8002DEBA0 /* Debug */,
+				6D8190081DF948C8002DEBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6D8190091DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayoutTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D81900A1DF948C8002DEBA0 /* Debug */,
+				6D81900B1DF948C8002DEBA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D818FDC1DF948C7002DEBA0 /* Project object */;
+}
