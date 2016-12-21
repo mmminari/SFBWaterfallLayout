@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D5D1E871DFA52FC0096F634 /* LibraryClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D1E851DFA52FC0096F634 /* LibraryClass.m */; };
+		6D5D1E8C1DFA58260096F634 /* UtilityClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D1E8A1DFA58260096F634 /* UtilityClass.m */; };
+		6D5D1E8F1DFA83570096F634 /* SFBHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D1E8E1DFA83570096F634 /* SFBHTTPClient.m */; };
+		6D5D1E921DFA83BD0096F634 /* YHHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5D1E911DFA83BD0096F634 /* YHHTTPClient.m */; };
 		6D818FE91DF948C7002DEBA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D818FE81DF948C7002DEBA0 /* main.m */; };
 		6D818FEC1DF948C7002DEBA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D818FEB1DF948C7002DEBA0 /* AppDelegate.m */; };
 		6D818FEF1DF948C7002DEBA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D818FEE1DF948C7002DEBA0 /* ViewController.m */; };
@@ -14,6 +18,10 @@
 		6D818FF41DF948C7002DEBA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D818FF31DF948C7002DEBA0 /* Assets.xcassets */; };
 		6D818FF71DF948C7002DEBA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D818FF51DF948C7002DEBA0 /* LaunchScreen.storyboard */; };
 		6D8190021DF948C8002DEBA0 /* FBWaterfallLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8190011DF948C8002DEBA0 /* FBWaterfallLayoutTests.m */; };
+		6D81900F1DF94FA5002DEBA0 /* WatarfallCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D81900D1DF94FA5002DEBA0 /* WatarfallCell.m */; };
+		6D8190101DF94FA5002DEBA0 /* WatarfallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D81900E1DF94FA5002DEBA0 /* WatarfallCell.xib */; };
+		A6D6AA78E6F5F89FCF5F7E04 /* libPods-FBWaterfallLayoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A047D47461A8912C1DFD7FC /* libPods-FBWaterfallLayoutTests.a */; };
+		E74AF8D76B8254696F1E22A4 /* libPods-FBWaterfallLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3509BF7D52336416C506FBA /* libPods-FBWaterfallLayout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41258CEFB3B1837AE94864B8 /* Pods-FBWaterfallLayoutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBWaterfallLayoutTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBWaterfallLayoutTests/Pods-FBWaterfallLayoutTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A047D47461A8912C1DFD7FC /* libPods-FBWaterfallLayoutTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBWaterfallLayoutTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5D1E841DFA52FC0096F634 /* LibraryClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryClass.h; sourceTree = "<group>"; };
+		6D5D1E851DFA52FC0096F634 /* LibraryClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryClass.m; sourceTree = "<group>"; };
+		6D5D1E881DFA58260096F634 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6D5D1E891DFA58260096F634 /* UtilityClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilityClass.h; sourceTree = "<group>"; };
+		6D5D1E8A1DFA58260096F634 /* UtilityClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilityClass.m; sourceTree = "<group>"; };
+		6D5D1E8B1DFA58260096F634 /* YHDebugLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHDebugLog.h; sourceTree = "<group>"; };
+		6D5D1E8D1DFA83570096F634 /* SFBHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBHTTPClient.h; sourceTree = "<group>"; };
+		6D5D1E8E1DFA83570096F634 /* SFBHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBHTTPClient.m; sourceTree = "<group>"; };
+		6D5D1E901DFA83BD0096F634 /* YHHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHHTTPClient.h; sourceTree = "<group>"; };
+		6D5D1E911DFA83BD0096F634 /* YHHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHHTTPClient.m; sourceTree = "<group>"; };
 		6D818FE41DF948C7002DEBA0 /* FBWaterfallLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBWaterfallLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D818FE81DF948C7002DEBA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D818FEA1DF948C7002DEBA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +60,13 @@
 		6D818FFD1DF948C8002DEBA0 /* FBWaterfallLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBWaterfallLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D8190011DF948C8002DEBA0 /* FBWaterfallLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBWaterfallLayoutTests.m; sourceTree = "<group>"; };
 		6D8190031DF948C8002DEBA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D81900C1DF94FA5002DEBA0 /* WatarfallCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatarfallCell.h; sourceTree = "<group>"; };
+		6D81900D1DF94FA5002DEBA0 /* WatarfallCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatarfallCell.m; sourceTree = "<group>"; };
+		6D81900E1DF94FA5002DEBA0 /* WatarfallCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatarfallCell.xib; sourceTree = "<group>"; };
+		7BE0E1A1785C96C754A8509B /* Pods-FBWaterfallLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBWaterfallLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBWaterfallLayout/Pods-FBWaterfallLayout.release.xcconfig"; sourceTree = "<group>"; };
+		A3509BF7D52336416C506FBA /* libPods-FBWaterfallLayout.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FBWaterfallLayout.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5A7168A40D289BAA3901575 /* Pods-FBWaterfallLayoutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBWaterfallLayoutTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBWaterfallLayoutTests/Pods-FBWaterfallLayoutTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1DEDF9C9FA47F4B1228326A /* Pods-FBWaterfallLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBWaterfallLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBWaterfallLayout/Pods-FBWaterfallLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E74AF8D76B8254696F1E22A4 /* libPods-FBWaterfallLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +82,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6D6AA78E6F5F89FCF5F7E04 /* libPods-FBWaterfallLayoutTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15008F41F53F9E994F19C3EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1DEDF9C9FA47F4B1228326A /* Pods-FBWaterfallLayout.debug.xcconfig */,
+				7BE0E1A1785C96C754A8509B /* Pods-FBWaterfallLayout.release.xcconfig */,
+				41258CEFB3B1837AE94864B8 /* Pods-FBWaterfallLayoutTests.debug.xcconfig */,
+				D5A7168A40D289BAA3901575 /* Pods-FBWaterfallLayoutTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6D818FDB1DF948C7002DEBA0 = {
 			isa = PBXGroup;
 			children = (
 				6D818FE61DF948C7002DEBA0 /* FBWaterfallLayout */,
 				6D8190001DF948C8002DEBA0 /* FBWaterfallLayoutTests */,
 				6D818FE51DF948C7002DEBA0 /* Products */,
+				15008F41F53F9E994F19C3EB /* Pods */,
+				F16F780D7BCE970AEFCA90CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +123,16 @@
 		6D818FE61DF948C7002DEBA0 /* FBWaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
+				6D5D1E901DFA83BD0096F634 /* YHHTTPClient.h */,
+				6D5D1E911DFA83BD0096F634 /* YHHTTPClient.m */,
+				6D5D1E8D1DFA83570096F634 /* SFBHTTPClient.h */,
+				6D5D1E8E1DFA83570096F634 /* SFBHTTPClient.m */,
+				6D5D1E881DFA58260096F634 /* PrefixHeader.pch */,
+				6D5D1E891DFA58260096F634 /* UtilityClass.h */,
+				6D5D1E8A1DFA58260096F634 /* UtilityClass.m */,
+				6D5D1E8B1DFA58260096F634 /* YHDebugLog.h */,
+				6D5D1E841DFA52FC0096F634 /* LibraryClass.h */,
+				6D5D1E851DFA52FC0096F634 /* LibraryClass.m */,
 				6D818FEA1DF948C7002DEBA0 /* AppDelegate.h */,
 				6D818FEB1DF948C7002DEBA0 /* AppDelegate.m */,
 				6D818FED1DF948C7002DEBA0 /* ViewController.h */,
@@ -90,6 +142,9 @@
 				6D818FF51DF948C7002DEBA0 /* LaunchScreen.storyboard */,
 				6D818FF81DF948C7002DEBA0 /* Info.plist */,
 				6D818FE71DF948C7002DEBA0 /* Supporting Files */,
+				6D81900C1DF94FA5002DEBA0 /* WatarfallCell.h */,
+				6D81900D1DF94FA5002DEBA0 /* WatarfallCell.m */,
+				6D81900E1DF94FA5002DEBA0 /* WatarfallCell.xib */,
 			);
 			path = FBWaterfallLayout;
 			sourceTree = "<group>";
@@ -111,6 +166,15 @@
 			path = FBWaterfallLayoutTests;
 			sourceTree = "<group>";
 		};
+		F16F780D7BCE970AEFCA90CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3509BF7D52336416C506FBA /* libPods-FBWaterfallLayout.a */,
+				6A047D47461A8912C1DFD7FC /* libPods-FBWaterfallLayoutTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D8190061DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayout" */;
 			buildPhases = (
+				5FBC705726376142B3A9EBEF /* [CP] Check Pods Manifest.lock */,
 				6D818FE01DF948C7002DEBA0 /* Sources */,
 				6D818FE11DF948C7002DEBA0 /* Frameworks */,
 				6D818FE21DF948C7002DEBA0 /* Resources */,
+				FD4632D7B394FCD487143ED8 /* [CP] Embed Pods Frameworks */,
+				E44970A1B0EB47B4D503F6FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D8190091DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayoutTests" */;
 			buildPhases = (
+				2BFCA0BBA6C2A9745D09BC56 /* [CP] Check Pods Manifest.lock */,
 				6D818FF91DF948C8002DEBA0 /* Sources */,
 				6D818FFA1DF948C8002DEBA0 /* Frameworks */,
 				6D818FFB1DF948C8002DEBA0 /* Resources */,
+				8EFF4A58CA7ED2BD079142CB /* [CP] Embed Pods Frameworks */,
+				08C1B1783C173764DFCE53A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D8190101DF94FA5002DEBA0 /* WatarfallCell.xib in Resources */,
 				6D818FF71DF948C7002DEBA0 /* LaunchScreen.storyboard in Resources */,
 				6D818FF41DF948C7002DEBA0 /* Assets.xcassets in Resources */,
 				6D818FF21DF948C7002DEBA0 /* Main.storyboard in Resources */,
@@ -209,13 +280,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08C1B1783C173764DFCE53A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBWaterfallLayoutTests/Pods-FBWaterfallLayoutTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BFCA0BBA6C2A9745D09BC56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FBC705726376142B3A9EBEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EFF4A58CA7ED2BD079142CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBWaterfallLayoutTests/Pods-FBWaterfallLayoutTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E44970A1B0EB47B4D503F6FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBWaterfallLayout/Pods-FBWaterfallLayout-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD4632D7B394FCD487143ED8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBWaterfallLayout/Pods-FBWaterfallLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6D818FE01DF948C7002DEBA0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5D1E8F1DFA83570096F634 /* SFBHTTPClient.m in Sources */,
+				6D5D1E921DFA83BD0096F634 /* YHHTTPClient.m in Sources */,
+				6D81900F1DF94FA5002DEBA0 /* WatarfallCell.m in Sources */,
 				6D818FEF1DF948C7002DEBA0 /* ViewController.m in Sources */,
+				6D5D1E871DFA52FC0096F634 /* LibraryClass.m in Sources */,
 				6D818FEC1DF948C7002DEBA0 /* AppDelegate.m in Sources */,
+				6D5D1E8C1DFA58260096F634 /* UtilityClass.m in Sources */,
 				6D818FE91DF948C7002DEBA0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +445,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -323,6 +493,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -348,10 +519,12 @@
 		};
 		6D8190071DF948C8002DEBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1DEDF9C9FA47F4B1228326A /* Pods-FBWaterfallLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A87J69XM38;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
 				INFOPLIST_FILE = FBWaterfallLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FBWaterfallLayout;
@@ -361,10 +534,12 @@
 		};
 		6D8190081DF948C8002DEBA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BE0E1A1785C96C754A8509B /* Pods-FBWaterfallLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A87J69XM38;
+				GCC_PREFIX_HEADER = "${SRCROOT}/${PROJECT_NAME}/PrefixHeader.pch";
 				INFOPLIST_FILE = FBWaterfallLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FBWaterfallLayout;
@@ -374,6 +549,7 @@
 		};
 		6D81900A1DF948C8002DEBA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41258CEFB3B1837AE94864B8 /* Pods-FBWaterfallLayoutTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FBWaterfallLayoutTests/Info.plist;
@@ -386,6 +562,7 @@
 		};
 		6D81900B1DF948C8002DEBA0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A7168A40D289BAA3901575 /* Pods-FBWaterfallLayoutTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FBWaterfallLayoutTests/Info.plist;
@@ -415,6 +592,7 @@
 				6D8190081DF948C8002DEBA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D8190091DF948C8002DEBA0 /* Build configuration list for PBXNativeTarget "FBWaterfallLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +601,7 @@
 				6D81900B1DF948C8002DEBA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
