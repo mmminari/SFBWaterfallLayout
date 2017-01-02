@@ -25,6 +25,8 @@ NSString *const baseURL = @"https://api.fanbook.me";
 {
     if (self = [super initWithBaseURL:[NSURL URLWithString:@"https://apidev.fanbook.me"]]) {
         LogYellow(@"API BaseURL : %@",baseURL);
+        
+        [self setRequestSerializer:[AFJSONRequestSerializer serializer]];
     }
     
     return self;
@@ -46,6 +48,8 @@ NSString *const baseURL = @"https://api.fanbook.me";
     }
     
     if ([method isEqualToString:@"POST"]) {
+        self.requestSerializer = [AFJSONRequestSerializer serializer];
+
         [self requestPOST:path parameters:parameters success:success failure:failure];
     }
     else if ([method isEqualToString:@"GET"]) {

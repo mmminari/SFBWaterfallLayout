@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UtilityClass.h"
 
 #define DEVICE_WIDTH                                                [UIScreen mainScreen].bounds.size.width
 #define STANDARD_DEVICE_WIDTH                                       414.0f
-#define WRATIO_WIDTH(w)                                             (w/3.0f) / STANDARD_DEVICE_WIDTH * DEVICE_WIDTH
+#define WRATIO_WIDTH(w)                                             (w) / STANDARD_DEVICE_WIDTH * DEVICE_WIDTH
 
 #define DEVICE_HEIGHT                                               [UIScreen mainScreen].bounds.size.height
 #define STANDARD_DEVICE_HEIGHT                                      736.0f
@@ -21,6 +22,8 @@
 
 
 @interface LibraryClass : NSObject
+
+@property (strong, nonatomic) UtilityClass *util;
 
 + (LibraryClass *)sharedInstance;
 

@@ -12,7 +12,7 @@
 
 #define DEVICE_WIDTH                                                [UIScreen mainScreen].bounds.size.width
 #define STANDARD_DEVICE_WIDTH                                       414.0f
-#define WRATIO_WIDTH(w)                                             (w/3.0f) / STANDARD_DEVICE_WIDTH * DEVICE_WIDTH
+#define WRATIO_WIDTH(w)                                             (w) / STANDARD_DEVICE_WIDTH * DEVICE_WIDTH
 
 #define DEVICE_HEIGHT                                               [UIScreen mainScreen].bounds.size.height
 #define STANDARD_DEVICE_HEIGHT                                      736.0f
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, CardList)
 
 
 @interface UtilityClass : UIViewController
-
+- (CGFloat)getStringHeightWithString:(NSString *)str maxWidth:(CGFloat)maxWidth maxLine:(NSInteger)maxLine font:(UIFont *)fontType;
 -(NSString *)getNameOfTheImageWithUrl:(NSString *)urlString;
 -(CGFloat)getScreenWidth;
 -(UIColor *)getColorWithRGBCode:(NSString *)code;

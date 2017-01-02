@@ -9,7 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#import "YHDebugLog.h"
+#import "DebugLog.h"
 #import "UtilityClass.h"
+#import "LibraryClass.h"
 
 #endif /* PrefixHeader_pch */

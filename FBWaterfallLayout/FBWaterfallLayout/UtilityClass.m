@@ -15,6 +15,22 @@
 
 @implementation UtilityClass
 
+- (CGFloat)getStringHeightWithString:(NSString *)str maxWidth:(CGFloat)maxWidth maxLine:(NSInteger)maxLine font:(UIFont *)fontType
+{
+    CGFloat result = 0.0f;
+    
+    str = [str stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
+    
+    NSDictionary *attr = @{NSFontAttributeName : fontType};
+    
+    NSString *checkChar = @"K";
+    CGSize checkCharSize = [checkChar sizeWithAttributes:attr];
+    CGRect textRect = [str boundingRectWithSize:CGSizeMake(maxWidth, maxLine * checkCharSize.height) options: NSStringDrawingUsesLineFragmentOrigin attributes:attr context:nil];
+    result = textRect.size.height + (maxLine -1)*checkCharSize.height/3;
+    
+    return result;
+}
+
 -(NSString *)getNameOfTheImageWithUrl:(NSString *)urlString
 {
     NSArray *queryArr = [urlString componentsSeparatedByString:@"/"];

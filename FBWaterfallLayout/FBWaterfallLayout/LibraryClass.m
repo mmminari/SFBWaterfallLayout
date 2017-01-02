@@ -21,9 +21,20 @@
     
     dispatch_once(&oncePredicate, ^{
         _sharedInstance = [[LibraryClass alloc]init];
+        
     });
     
     return _sharedInstance;
+}
+
+- (instancetype)init
+{
+    if(self = [super init])
+    {
+        self.util = [[UtilityClass alloc]init];
+    }
+    
+    return self;
 }
 
 -(void)setImageView:(UIImageView *)imageView urlString:(NSString *)urlString placeholderImage:(UIImage *)image animation:(BOOL)ani
