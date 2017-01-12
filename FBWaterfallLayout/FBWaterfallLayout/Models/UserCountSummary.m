@@ -133,15 +133,15 @@ NSString *const kUserCountSummaryCuration = @"curation";
     
     if (copy) {
 
-        copy.celebrity = [self.celebrity copyWithZone:zone];
-        copy.following = [self.following copyWithZone:zone];
+        copy.celebrity = self.celebrity;
+        copy.following = self.following;
         copy.userIdx = self.userIdx;
-        copy.hitTotalCount = [self.hitTotalCount copyWithZone:zone];
-        copy.follower = [self.follower copyWithZone:zone];
-        copy.artWork = [self.artWork copyWithZone:zone];
-        copy.like = [self.like copyWithZone:zone];
-        copy.likeTotalCount = [self.likeTotalCount copyWithZone:zone];
-        copy.curation = [self.curation copyWithZone:zone];
+        copy.hitTotalCount = self.hitTotalCount;
+        copy.follower = self.follower;
+        copy.artWork = self.artWork;
+        copy.like = self.like;
+        copy.likeTotalCount = self.likeTotalCount;
+        copy.curation = self.curation;
     }
     
     return copy;

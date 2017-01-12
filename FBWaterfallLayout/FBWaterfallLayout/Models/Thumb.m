@@ -141,14 +141,14 @@ NSString *const kThumbUrl = @"url";
 
         copy.isMain = self.isMain;
         copy.height = [self.height copyWithZone:zone];
-        copy.fileName = [self.fileName copyWithZone:zone];
-        copy.order = [self.order copyWithZone:zone];
+        copy.fileName = self.fileName;
+        copy.order = self.order;
         copy.imageKey = [self.imageKey copyWithZone:zone];
         copy.size = [self.size copyWithZone:zone];
         copy.width = [self.width copyWithZone:zone];
-        copy.thumbType = [self.thumbType copyWithZone:zone];
-        copy.desc = [self.desc copyWithZone:zone];
-        copy.url = [self.url copyWithZone:zone];
+        copy.thumbType = self.thumbType;
+        copy.desc = self.desc;
+        copy.url = self.url;
     }
     
     return copy;
