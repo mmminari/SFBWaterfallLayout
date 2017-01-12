@@ -71,7 +71,6 @@
 		6D89472B1E135CA9006046CC /* visual_innershadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8947011E135CA9006046CC /* visual_innershadow.png */; };
 		6D89472C1E135CA9006046CC /* webtoon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D8947021E135CA9006046CC /* webtoon_icon.png */; };
 		A6D6AA78E6F5F89FCF5F7E04 /* libPods-FBWaterfallLayoutTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A047D47461A8912C1DFD7FC /* libPods-FBWaterfallLayoutTests.a */; };
-		E74AF8D76B8254696F1E22A4 /* libPods-FBWaterfallLayout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3509BF7D52336416C506FBA /* libPods-FBWaterfallLayout.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,7 +184,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E74AF8D76B8254696F1E22A4 /* libPods-FBWaterfallLayout.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
