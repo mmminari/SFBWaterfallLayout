@@ -33,14 +33,11 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)viewDidLoad 
 {
     [super viewDidLoad];
     
     [self.cvMain registerNib:[UINib nibWithNibName:@"WatarfallCell" bundle:nil] forCellWithReuseIdentifier:@"WatarfallCell"];
-    
-    self.waterfallLayout.minimumInteritemSpacing = 10.0f;
-    self.waterfallLayout.minimumColumnSpacing = 10.0f;
     
     self.lib = [LibraryClass sharedInstance];
     
@@ -64,26 +61,29 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     WatarfallCell *cell = [self.cvMain dequeueReusableCellWithReuseIdentifier:@"WatarfallCell" forIndexPath:indexPath];
-    
-    //cell.ivColor.backgroundColor = [self randomBackgroundColor];
-    
-    ResponseArtWork *artwork = self.artworkList[indexPath.item];
-    
-    NSString *urlString = artwork.thumb.imageKey;
-    
-    CGFloat imageHeight = [self.cellHeights[indexPath.item] floatValue];
-    
-    [cell setThumbnailImageWithImageUrl:urlString imageHeight:imageHeight];
-    
-    [cell setTitle:artwork.artWorkTitle Desc:artwork.artWorkDesc];
-    
-    [cell setUserProfileWithUrl:artwork.user.userPhoto];
-    
-    [cell setUserNick:artwork.user.userNick];
-    
-    [cell setViewCount:artwork.hitCount CommentCount:artwork.commentCount LikeCount:artwork.likeCount];
-    
-    [cell setCurationName:artwork.cuTitle curatedBy:artwork.cuNickName curationCount:artwork.cuCount];
+    @try {
+        ResponseArtWork *artwork = self.artworkList[indexPath.item];
+        
+        NSString *urlString = artwork.thumb.imageKey;
+        
+        CGFloat imageHeight = [self.cellHeights[indexPath.item] floatValue];
+        
+        [cell setThumbnailImageWithImageUrl:urlString imageHeight:imageHeight];
+        
+        [cell setTitle:artwork.artWorkTitle Desc:artwork.artWorkDesc];
+        
+        [cell setUserProfileWithUrl:artwork.user.userPhoto];
+        
+        [cell setUserNick:artwork.user.userNick];
+        
+        [cell setViewCount:artwork.hitCount CommentCount:artwork.commentCount LikeCount:artwork.likeCount];
+        
+        [cell setCurationName:artwork.cuTitle curatedBy:artwork.cuNickName curationCount:artwork.cuCount];
+        
+    } @catch (NSException *exception) {
+        LogRed(@"exception : %@", exception.reason);
+    }
+
     
     return cell;
 }
@@ -103,6 +103,35 @@
     return result;
 
 }
+
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    UIEdgeInsets inset = UIEdgeInsetsZero;
+    
+    inset = UIEdgeInsetsMake(WRATIO_WIDTH(13.0f), WRATIO_WIDTH(13.0f), WRATIO_WIDTH(13.0f), WRATIO_WIDTH(13.0f));
+    
+    return inset;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
+{
+    CGFloat minimumInteritemSpacing = 0.0f;
+    
+    minimumInteritemSpacing = WRATIO_WIDTH(13.0f);
+
+    
+    return minimumInteritemSpacing;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumColumnSpacingForSectionAtIndex:(NSInteger)section;
+{
+    CGFloat minimumColumnSpacing = 0.0f;
+    
+    minimumColumnSpacing = WRATIO_WIDTH(13.0f);
+
+    return minimumColumnSpacing;
+}
+
 
 #pragma mark - UIScrollView
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
@@ -148,7 +177,7 @@
 {
     if(isLoadMore)
     {
-        self.currentPage = self.currentPage + 1;
+        self.currentPage += 1;
     }
     else
     {
@@ -205,7 +234,9 @@
         
         self.totalCount = listModel.data.totalCount;
         
-        [self.cvMain reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.cvMain reloadData];
+        });
     }
 }
 
@@ -221,7 +252,10 @@
         
         self.artworkList = (NSArray *)temp;
         
-        [self.cvMain reloadData];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.cvMain reloadData];
+        });
+    
     }
 }
 #pragma mark - Private Method
@@ -275,21 +309,31 @@
 {
     CGFloat result = 0.0f;
     
-    CGFloat totalAlc = WRATIO_WIDTH(103.0f);
-    
     ResponseArtWork *artwork = self.artworkList[index];
     
-    CGFloat maxWidth = ( DEVICE_WIDTH - WRATIO_WIDTH(13.0f) * 3 ) / 2 - WRATIO_WIDTH(13.0f) * 2;
+    CGFloat alcHeightOfThumbImage = [self.cellHeights[index] floatValue];
     
-    CGFloat heightOfTitleLabel = [self.lib.util getStringHeightWithString:artwork.artWorkTitle maxWidth:maxWidth maxLine:1 font:[UIFont systemFontOfSize:WRATIO_WIDTH(17.0f)]];
+    CGFloat alcTopOfTitleLabel = WRATIO_WIDTH(17.0f);
     
-    CGFloat heightOfDescLabel = [self.lib.util getStringHeightWithString:artwork.artWorkDesc maxWidth:maxWidth maxLine:2 font:[UIFont systemFontOfSize:WRATIO_WIDTH(13.0f)]];
+    CGFloat maxWidth = ( DEVICE_WIDTH - WRATIO_WIDTH(13.0f) * 5 ) / 2 ;
     
-    LogGreen(@"titleHeight : %f, descHeight : %f", heightOfTitleLabel, heightOfDescLabel );
+    NSString *title = artwork.artWorkTitle;
     
-    CGFloat heightOfThubImage = [self.cellHeights[index] floatValue];
+    CGFloat heightOfTitleLabel = [self.lib.util getStringHeightWithString:title maxWidth:maxWidth maxLine:1 font:[UIFont boldSystemFontOfSize:WRATIO_WIDTH(17.0f)]];
     
-    result = totalAlc + heightOfTitleLabel + heightOfDescLabel + heightOfThubImage;
+    CGFloat alcTopOfDescLabel = WRATIO_WIDTH(11.0f);
+    
+    NSString *desc = artwork.artWorkDesc;
+    
+    CGFloat heightOfDescLabel = [self.lib.util getStringHeightWithString:desc maxWidth:maxWidth maxLine:2 font:[UIFont systemFontOfSize:WRATIO_WIDTH(13.0f)]];
+    
+    CGFloat alcTopOfCountIcon = WRATIO_WIDTH(15.0f);
+    
+    CGFloat alcHeightOfCountIcon = WRATIO_WIDTH(13.0f);
+    
+    CGFloat alcTopOfUserProfile = WRATIO_WIDTH(18.0f);
+    
+    CGFloat alcHeightOfUserProfile = WRATIO_WIDTH(40.0f);
     
     if(artwork.cuCount != 0)
     {
@@ -297,6 +341,17 @@
         
         result = result + heightOfCurationView;
     }
+    
+    result += alcHeightOfThumbImage;
+    result += alcTopOfTitleLabel;
+    result += heightOfTitleLabel;
+    result += alcTopOfDescLabel;
+    result += heightOfDescLabel;
+    result += alcTopOfCountIcon;
+    result += alcHeightOfCountIcon;
+    result += alcTopOfUserProfile;
+    result += alcHeightOfUserProfile;
+    
     
     LogGreen(@"cellHeight : %f", result);
     

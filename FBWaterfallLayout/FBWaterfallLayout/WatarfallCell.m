@@ -171,6 +171,20 @@
     self.lbUserNick.text = userNick;
 }
 
+- (void)setCurationViewHeightWithCurationCount:(NSInteger)curationCount
+{
+    if(curationCount == 0)
+    {
+        self.alcHeightOfCurationView.constant = WRATIO_WIDTH(0.0f);
+    }
+    else
+    {
+        self.alcHeightOfCurationView.constant = WRATIO_WIDTH(40.0f);
+    }
+    
+    [self layoutIfNeeded];
+}
+
 - (void)setCurationName:(NSString *)curationName curatedBy:(NSString *)curatedBy curationCount:(NSInteger)curationCount
 {
     self.lbCurationName.text = curationName;

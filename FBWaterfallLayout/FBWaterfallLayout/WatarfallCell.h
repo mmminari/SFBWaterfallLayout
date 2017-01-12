@@ -17,6 +17,8 @@
 - (void)setViewCount:(NSInteger)viewCount CommentCount:(NSInteger)commentCount LikeCount:(NSInteger)likeCount;
 - (void)setUserProfileWithUrl:(NSString *)urlString;
 - (void)setUserNick:(NSString *)userNick;
+- (void)setCurationViewHeightWithCurationCount:(NSInteger)curationCount;
+
 - (void)setCurationName:(NSString *)curationName curatedBy:(NSString *)curatedBy curationCount:(NSInteger)curationCount;
 
 
